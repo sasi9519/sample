@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    <title>Document</title>
+    <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+   
+      
+}
+nav{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: black;
+  
+   height: 11vh;
+   position: sticky;
+   top:0;
+   z-index:99;
+  
+}
+.logo{
+    padding-top: 1em;
+    padding-left:1em ;
+background: linear-gradient(to right, #ff6a00, #ee0979);  
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+font-size: 1em;
+}
+.techy{
+font-size: 1.9em;
+background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f); 
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.fi{
+    display: flex;position: relative;
+}
+.fi>li{
+    padding-left: 2em;
+    margin-right: 2em;
+    
+    
+}
+.fi>li>a{
+    color: white;
+    text-decoration: none;
+   
+}
+/* main content for section 1 */
+.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    overflow:hidden;
+   
+  
+   
+}
+.sec1>h1{
+ 
+    padding-top: 2em;
+    padding-bottom: 3em;
+    color: white;
+}
+.sec1>a,.sec2 a{
+    width: 240px;
+    height: 50px;
+    position: relative;
+    right: 2em;
+    border-radius: 9px;
+    outline: none;
+    text-decoration: none;
+    background: linear-gradient(to right, #ff6a00, #ee0979);  
+    text-align: center;
+    padding-top: 16px;font-size:medium;
+    color: white;
+  
+    
+    
+}
+.sec1>a:hover{
+
+    background:  #ee0979;  
+    transition: background-color 1s linear ;
+    
+    
+}
+.sec2{
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-around;
+    background: black;overflow:hidden;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 7em;
+    color: white;
+}
+.sec3{
+    display: flex;
+    justify-content: space-around;
+    height: 550px;
+    background: black;
+    padding-top: 4em; overflow:hidden;
+    
+}
+.sec3>h3{
+    position: relative;
+    bottom: 2em;
+   
+}
+.serv1,.serv2,.serv3,.serv4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;border-radius: 8px;
+    height: 425px;
+    width: 300px;
+    padding-right: 2em;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+    
+}
+.sec3>.serv1{
+    background:linear-gradient(to right, #00dbde 0%, #fc00ff 100%) ;
+    
+}
+.sec3>.serv2{
+    background: linear-gradient( to right, #a6ffcb, #12d8fa, #1fa2ff );
+}
+.sec3>.serv3{
+    background-image: linear-gradient( 
+-225deg
+, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
+}
+.sec3>.serv4{
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+}
+.serv1:hover{
+    transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.serv2:hover{
+    transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.serv3:hover{
+    transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.serv4:hover{
+    transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.sec4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    height: 400px;
+    overflow:hidden;
+}
+.sec4Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+.allabout{
+    display: flex;
+    justify-content: space-around;
+}
+.allabout>ul{
+    list-style-type: none;
+    padding-top: 3em;
+}
+.allabout>ul>li>a{
+ text-decoration: none;
+    color: white;
+  
+   
+
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding-top: 3em;
+    overflow:hidden;
+}
+.copyWriter{
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    padding-top: 3em;
+}
+/* for mobile use */
+@media screen and (max-width: 960px) {
+    
+
+    .fi{
+        display: flex;
+        flex-direction: column;
+     background: rgb(209, 3, 3);
+     position: absolute;
+     top:105%;
+     width: 100%;
+     height: 40vh;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+  
+        
+    }
+    .fi>li{
+        padding-bottom:1em;
+    }
+    
+
+.sec1>h1{
+    font-size: medium;
+    padding-left: 1em;
+}
+.sec1>a,.sec2 a{
+    width: 240px;
+    height: 50px;
+    position: relative;
+    right: 0.4em;
+    border-radius: 9px;
+    outline: none;
+    text-decoration: none;
+    background: linear-gradient(to right, #ff6a00, #ee0979);  
+    text-align: center;
+    padding-top: 16px;font-size:medium;
+    color: white;
+  
+    
+    
+}
+.sec2{
+    display: flex;
+    padding-top: 3%;
+    flex-direction: column;
+    justify-content: space-around;
+    background: black;overflow:hidden;
+}
+.content{
+
+  
+    width: 100%;
+padding-top: 4em;
+padding-right: 5em;
+line-height: 1;
+
+    
+
+
+    color: white;
+}
+.sec2>img{
+    width: 50%;
+    position: relative;
+    left:25%;
+}
+.sec3{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+   align-items: center;
+   justify-content: center;
+   
+ 
+   
+    
+}
+.serv1,.serv2,.serv3,.serv4{
+    border-radius: 8px;
+    height: 425px;
+    width: 300px;
+    margin-bottom: 5%;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+  
+}
+    
+    }
+    </style>
+</head>
+<body>
+    
+        <nav class="nav">
+            <div class="logo">
+                <span class="techy">TECHY</span><br><span style="font-size:1.6em; padding-bottom:2px;">SPOT</span>
+            </div>
+            <ul type="none" class="fi">
+                 <li><a href="#" style="border-bottom: 7px solid rgb(243, 13, 243);border-radius: 7px;width: 100px;height: 3px;">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+               
+               <li class="my" ><a href="#">MY SKILLS</a></li>
+            </ul>
+        </nav>
+<main>
+    <section class="sec1">
+    <h1>TO SEE MORE ABOUT ME CLICK THE EXPLORE BUTTON </h1>
+    <a href="#">EXPLORE</a>
+
+</section>
+<section class="sec2">
+    <img src="download.png">
+    <div class="content">
+    <h4 style="padding-right: 4em;">WHAT WE DO $</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere soluta illum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, deleniti.
+    </p><br>
+   
+    <a href="#">SCHECDULE TIME </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+</section>
+<h3 style=" text-align: center;background-color:black;color:whitesmoke;font-weight:bolder;padding-top:7em">OUR SERVICES</h3>
+<section class="sec3">
+    
+    <div class="serv1">
+        <h3>Custom Colorways</h3>
+        <p>AI Powered technology</p>
+        <a href="#">Get started</a>
+    </div>
+    <div class="serv2">
+        <h3> Are you Ready?</h3>
+        <p> Take the lepa</p>
+        <a href="#">Get started</a>
+
+
+
+    </div>
+    <div class="serv3">
+      
+        <h3>Full Gradients</h3>
+        <p>100 Combinations</p>
+        <a href="#">Get started</a>
+    </div>
+    <div class="serv4">
+        <h3>Infinite Choices
+           </h3>
+        <p> 1000's of colors</p>
+        <a href="#">Get started</a>
+    </div>
+</section>
+<section class="sec4">
+    <div class="sec4Content">
+  <h1 style="  font-size: 4em;">  JOIN OUR TEAM</h1>
+  <h3>Sign Up Today</h3>
+<p>See what makes us different</p>
+<div><a href="#">Sign Up</a></div>
+</div>
+<img src="download.png" alt="">
+</section>
+<section class="footer">
+    <div class="allabout">
+        <ul>
+            <li><a href="#" style="font-size: 1.8em;">About Us</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"  style="font-size: 1.8em;">Contact Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Destinations</a></li>
+            
+        </ul>
+        <ul>
+            <li><a href="#"  style="font-size: 1.8em;">Videos</a></li>
+            <li><a href="#">Submit Video</a></li>
+            <li><a href="#">Ambassadors</a></li>
+            <li><a href="#">Agency</a></li>
+          
+        </ul>
+        <ul>
+            <li><a href="#">
+                Social Media</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">
+                Facebook</a></li>
+            <li><a href="#">
+                Youtube</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="copyWriter">
+       <h3>COLOR</h3> 
+<h4>© techt spot 2021. All rights reserved</h4>
+
+
+    </div>
+</section>
+</main>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
